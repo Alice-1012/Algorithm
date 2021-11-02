@@ -8,12 +8,12 @@ int main(void){
     printf("%d",data[i]);
   }
   printf("\n");
-  for(int i=0; i<5;i++){
-      for(int j=i+1;j<6;j++){
-          if(data[i]>data[j]){
+  for(int i=0; i<5;i++){ // 비교대상이 되는 기준원소
+      for(int j=i+1;j<6;j++){ //
+          if(data[i]>data[j]){ //오름차순으로 비교
               temp=data[i];
               data[i]=data[j];
-              data[j]=temp;
+              data[j]=temp; //왼쪽에 더 작은수 저장
           }
       }
   }
